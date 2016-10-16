@@ -8,6 +8,12 @@
     	</sequence>
     </complexType>
 
+    <complexType name="Estanteria">
+    	<sequence>
+    		<element name="Nombre" type="string"></element>
+    		<element name="Libros" type="tns:Libro" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
 
-    <element name="Libro" type="tns:Libro"></element>
+    <element name="MiEstanteria" type="tns:Estanteria"></element>
 </schema>

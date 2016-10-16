@@ -7,16 +7,19 @@ public class XMLBinding {
 		try {
 			final JAXBContext jc = JAXBContext.newInstance(Libro.class.getPackage().getName());
 			final Unmarshaller u = jc.createUnmarshaller();
-	        final JAXBElement<Libro> menuElement = unmarshallLibreria(u);
-			System.out.println("Nombre: " + menuElement.getValue().getNombre());
-			System.out.println("ISBN: " + menuElement.getValue().getISBN());
+	        final JAXBElement<Estanteria> libreria = unmarshallLibreria(u);
+			System.out.println("Nombre Estanteria: " + libreria.getValue().getNombre());
+			for(Libro l : libreria.getValue().getLibros()){
+				System.out.println("Nombre del libro: " + l.getNombre());
+				System.out.println("ISBN: " + l.getISBN());
+			}
 		} catch (JAXBException e) {
 			e.printStackTrace();
 		}
 	}
 
-	private static JAXBElement<Libro> unmarshallLibreria(final Unmarshaller u)
+	private static JAXBElement<Estanteria> unmarshallLibreria(final Unmarshaller u)
 			throws JAXBException {
-		return (JAXBElement<Libro>)u.unmarshal(XMLBinding.class.getResourceAsStream("/Libreria.xml"));
+		return (JAXBElement<Estanteria>)u.unmarshal(XMLBinding.class.getResourceAsStream("/Libreria.xml"));
 	}
 }

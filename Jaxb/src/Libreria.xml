@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tns:Libro xmlns:tns="http://www.example.org/NewXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/NewXMLSchema Libreria.xsd ">
-  <tns:Nombre>El Quijote</tns:Nombre>
-  <tns:ISBN>ASDBA-AS233-BSD</tns:ISBN>
-</tns:Libro>
+<tns:MiEstanteria xmlns:tns="http://www.example.org/NewXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/NewXMLSchema Libreria.xsd ">
+  <tns:Nombre>tns:Nombre</tns:Nombre>
+  <tns:Libros>
+    <tns:Nombre>El Quijote</tns:Nombre>
+    <tns:ISBN>ABC</tns:ISBN>
+  </tns:Libros>
+  <tns:Libros>
+    <tns:Nombre>Harry Potter</tns:Nombre>
+    <tns:ISBN>DEF</tns:ISBN>
+  </tns:Libros>
+</tns:MiEstanteria>

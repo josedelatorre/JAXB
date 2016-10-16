@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2016.10.16 a las 10:23:36 PM CEST 
+// Generado el: 2016.10.16 a las 10:49:26 PM CEST 
 //
 
 
@@ -31,13 +31,21 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Libro_QNAME = new QName("http://www.example.org/NewXMLSchema", "Libro");
+    private final static QName _MiEstanteria_QNAME = new QName("http://www.example.org/NewXMLSchema", "MiEstanteria");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.example.newxmlschema
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link Estanteria }
+     * 
+     */
+    public Estanteria createEstanteria() {
+        return new Estanteria();
     }
 
     /**
@@ -49,12 +57,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Libro }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Estanteria }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.example.org/NewXMLSchema", name = "Libro")
-    public JAXBElement<Libro> createLibro(Libro value) {
-        return new JAXBElement<Libro>(_Libro_QNAME, Libro.class, null, value);
+    @XmlElementDecl(namespace = "http://www.example.org/NewXMLSchema", name = "MiEstanteria")
+    public JAXBElement<Estanteria> createMiEstanteria(Estanteria value) {
+        return new JAXBElement<Estanteria>(_MiEstanteria_QNAME, Estanteria.class, null, value);
     }
 
 }
