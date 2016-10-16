@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Libro xmlns:tns="http://www.example.org/NewXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/NewXMLSchema Libreria.xsd ">
+  <tns:Nombre>El Quijote</tns:Nombre>
+  <tns:ISBN>ASDBA-AS233-BSD</tns:ISBN>
+</tns:Libro>
